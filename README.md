@@ -11,8 +11,8 @@ http://jslover.github.com/jquery-tag
 Authors
 -------
 
-*http://jslover.github.com
-*http://jslover.com
++ http://jslover.github.com
++ http://jslover.com
 
 
 
