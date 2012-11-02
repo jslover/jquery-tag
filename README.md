@@ -1,9 +1,8 @@
-[Jslover jquery-tag]
-welcome!
+Welcome!
 
 
-Blog
-----
+Blog && Demo
+------------
 
 http://jslover.github.com/jquery-tag
 
@@ -12,12 +11,12 @@ http://jslover.github.com/jquery-tag
 Authors
 -------
 
-http://jslover.github.com
-http://jslover.com
+*http://jslover.github.com
+*http://jslover.com
 
 
 
-Copyright and license
----------------------
+Copyright
+---------
 
-Copyright 2012 Jslover, Inc.
+Copyright 2012 Jslover
