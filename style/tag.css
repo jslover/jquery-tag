@@ -1,0 +1,10 @@
+﻿﻿.post-tag {font-size: 13px;  background: none repeat scroll 0 0 #FFFFFF; border: 1px solid #CFD3D5; border-radius: 2px; xxbox-shadow: 1px 1px 1px #D0D3D6; min-height: 60px;width:230px; overflow: hidden; padding: 5px; min-width: 188px; }
+.post-tag-list { }
+.post-tag-list li, .recommand-tag-list li { background: #999; border-radius: 2px 2px 2px 2px; box-shadow: 0 1px 1px #B7B9BC; color: #EEEEEE; float: left; line-height: 23px; margin: 0 5px 5px 0; padding: 0 9px; white-space: nowrap; cursor: default; }
+.post-tag-list li:hover, .recommand-tag-list li:hover { background: #555; }
+.post-tag-list li .delete-tag-btn { color: #EEEEEE; padding-left: 5px; cursor: pointer; }
+.post-tag-list li .delete-tag-btn:hover { color: red; }
+
+.recommand-tag-list{font-size:13px;}
+.recommand-tag-list li { cursor: pointer; max-width: 180px; overflow: hidden; }
+.post-tag-input { border: 0 none; margin: 0; outline: medium none; padding: 0; width: 188px; height: 30px; line-height: 30px; }
