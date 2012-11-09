@@ -1,70 +1,82 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+﻿﻿<!DOCTYPE html />
+<html>
 <head>
-    <title></title>
-    <link href="style/tag.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8" />
+    <title>tag输入框-jquery-tag</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, minimum-scale=1, user-scalable=no,target-densitydpi=medium-dpi">
+    <link href="http://jslover.github.com/style/main.css" rel="stylesheet" type="text/css" />
     <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="http://jslover.github.com/script/common.js" type="text/javascript"></script>
+    <!--DEMO引用的组件样式和JS-->
+    <link href="style/tag.css" rel="stylesheet" type="text/css" />
     <script src="script/tag.js" type="text/javascript"></script>
-    <style>
-        body { padding: 20px; }
-        * { padding: 0; margin: 0; }
-        li { list-style: none; }
-    </style>
 </head>
 <body>
-    <h1>
-        标签组件DEMO
-    </h1>
-    <h2>
-        DEMO1</h2>
-    <h3>
-        我的tag</h3>
-    <div id="divTagPost" style="width: 400px;">
+    <div id="header">
+        <div class="wrap">
+            <h1>
+                tag输入框</h1>
+            <p>
+                http://jslover.github.com/jquery-tag/
+            </p>
+            <ul>
+                <li><a href="http://jslover.github.com">返回首页</a></li>
+                <li><a href="https://github.com/jslover/jquery-tag">下载源码</a></li>
+            </ul>
+        </div>
     </div>
-    <h3>
-        热门tag</h3>
-    <div id="divTagHisory">
+    <div id="contenter">
+        <div class="wrap">
+            <br />
+            <h3>
+                demo1:默认</h3>
+            <div class="demo" style="height: auto">
+                <div id="divTagPost">
+                </div>
+                <input type="text" id="valTag" value="福州,厦门,莆田" />
+                <script>
+                    var $tag = new $.Tag({
+                        tagPostContenter: '#divTagPost'
+                            , tagPostText: '#valTag'
+                    });    
+                </script>
+            </div>
+            <h3>
+                demo2:带列表选择</h3>
+            <div class="demo" style="height: auto">
+                <h4>
+                    我的tag</h4>
+                <div id="divMyTag" style="width: 200px;">
+                </div>
+                <h4>
+                    热门tag</h4>
+                <div id="divHistoryTag">
+                </div>
+                <div style="clear: both">
+                </div>
+                <p>
+                    <input type="text" id="txtTag" value="风景,佳能" />
+                    <input type="text" id="txtHistory" value="风景,美女,写真,5D3" />
+                </p>
+                <script>
+                    var $tag2 = new $.Tag({
+                        tagPostContenter: '#divMyTag'
+                        , tagHistoryContenter: '#divHistoryTag'
+                        , tagPostText: '#txtTag'
+                        , tagHistoryText: '#txtHistory'
+                    });    
+                </script>
+            </div>
+            <br />
+        </div>
     </div>
-    <div style="clear: both">
+    <div id="footer">
+        <div class="wrap">
+            <p>
+                <a href="http://jslover.com">http://jslover.com</a></p>
+            <p>
+                <a href="http://jslover.github.com">http://jslover.github.com</a></p>
+        </div>
     </div>
-    <p>
-        <input type="text" id="valTag" value="福州,厦门,莆田" />
-        <input type="text" id="valTagHistory" value="北京,上海,广州,深圳" />
-    </p>
-    <script>
-        var $tag = new $.Tag({
-            tagPostContenter: '#divTagPost'
-            , tagHistoryContenter: '#divTagHisory'
-            , tagPostText: '#valTag'
-            , tagHistoryText: '#valTagHistory'
-        });    
-    </script>
-    <br />
-    <br />
-    <br />
-    <h2>
-        DEMO2</h2>
-    <h3>
-        我的tag</h3>
-    <div id="div1" style="width: 200px;">
-    </div>
-    <h3>
-        热门tag</h3>
-    <div id="div2">
-    </div>
-    <div style="clear: both">
-    </div>
-    <p>
-        <input type="text" id="Text1" value="风景,佳能" />
-        <input type="text" id="Text2" value="风景,美女,写真,5D3" />
-    </p>
-    <script>
-        var $tag2 = new $.Tag({
-            tagPostContenter: '#div1'
-            , tagHistoryContenter: '#div2'
-            , tagPostText: '#Text1'
-            , tagHistoryText: '#Text2'
-        });    
-    </script>
 </body>
 </html>
