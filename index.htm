@@ -35,10 +35,12 @@
                 </div>
                 <input type="text" id="valTag" value="福州,厦门,莆田" />
                 <script>
-                    var $tag = new $.Tag({
-                        tagPostContenter: '#divTagPost'
+                    $(function () {
+                        var $tag = new $.Tag({
+                            tagPostContenter: '#divTagPost'
                             , tagPostText: '#valTag'
-                    });    
+                        });
+                    });
                 </script>
             </div>
             <h3>
@@ -59,12 +61,14 @@
                     <input type="text" id="txtHistory" value="风景,美女,写真,5D3" />
                 </p>
                 <script>
-                    var $tag2 = new $.Tag({
-                        tagPostContenter: '#divMyTag'
+                    $(function () {
+                        var $tag2 = new $.Tag({
+                            tagPostContenter: '#divMyTag'
                         , tagHistoryContenter: '#divHistoryTag'
                         , tagPostText: '#txtTag'
                         , tagHistoryText: '#txtHistory'
-                    });    
+                        });
+                    });
                 </script>
             </div>
             <br />
